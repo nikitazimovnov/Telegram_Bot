@@ -1,4 +1,4 @@
-package com.example.telegram_bot.comand;
+package com.example.telegram_bot.command;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,7 +7,8 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Comand {
+public @interface Command {
+
     String name();
 
     String args();

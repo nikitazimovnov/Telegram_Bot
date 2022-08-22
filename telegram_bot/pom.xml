@@ -15,13 +15,24 @@
     <description>telegram_bot</description>
     <properties>
         <java.version>17</java.version>
+        <telegrambots-spring-version>0.22</telegrambots-spring-version>
     </properties>
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.github.xabgesagtx</groupId>-->
+<!--            <artifactId>telegram-spring-boot-starter</artifactId>-->
+<!--            <version>${telegrambots-spring.version}</version>-->
+<!--        </dependency>-->
+        <!-- Telegram API -->
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>LATEST</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
